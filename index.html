@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="adBar-plug/adBar.css">
+	<title>饿了么</title>
+
+	<style>
+
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="commnWidth clearfix">
+			<h1><a href="/" class="topbar-logo"><img src="src/topbar-logo.png" alt="导航栏LOGO"></a></h1>
+			
+			<div class="topbar-nav-list ">
+				<a href="" class="topbar-nav" id="topbar-home">首页</a>
+				<a href="" class="topbar-nav"><i class="hot"></i>品牌商家</a>
+				<a href="" class="topbar-nav">我的订单</a>
+				<a href="" class="topbar-nav">加盟合作</a>
+			</div><!-- topbar-nav-list end -->
+			
+			<div class="topbar-tool-list">
+				<a href="" class="topbar-tool topbar-shopcity"><span class="icon-gift icon-tool"></span>积分商城</a>
+				<a href="" class="topbar-tool"><span class="icon-headphones icon-tool"></span>服务中心</a>
+				<div id="topbar-tool-app">
+					<a href="" class="topbar-tool"><span class="icon-mobile icon-tool"></span>手机应用</a>
+					<div class="topbar-app-multi">
+						<div class="topbar-app-arrow"></div>
+						<div class="topbar-app clearfix">
+							<span>扫一扫,手机订餐方便</span>
+							<img src="src/app.png" alt="APP二维码">
+					
+						</div>
+					</div><!-- topbar-app-multi end -->
+				</div>
+				
+				
+			</div><!-- topbar-tool-list end -->
+			
+			
+			<div class="login-reg">
+				<span class="icon-user"></span>
+				<a href="">登录</a><span>/</span><a href="">注册</a>
+
+
+			</div><!-- login-reg end -->
+
+		</div><!-- commnWidth end -->
+		
+		
+	</header><!-- header end -->
+	<div class="right-bar">
+		<div class="right-bar-middle">
+			<div class="right-bar-menu">
+				<a href="" class="icon-buy-menu"><span class="icon-file-text"></span></a>
+				<div class="rightbar-menu-multi">
+					<div class="rightbar-menu-arrow"></div>
+					<div class="rightbar-menu clearfix">
+						<span>我的订单</span>
+					</div>
+				</div>
+			</div><!-- right-bar-menu end -->
+			
+			<hr/>
+			<a href="" class="icon-shop-car"><span class="icon-cart"></span><span id="text-shop-car">购物车</span></a>
+			<hr/>
+			<a href="" class="icon-email"><span class="icon-envelop"></span></a>
+			<a href="" class="icon-timeclock"><span class="icon-clock"></span></a>
+
+		</div><!-- right-bar-middle end -->
+		<div class="right-bar-bottom">
+			<div id="right-bar-app">
+				<a href="" class="icon-codeapp"><span class="icon-qrcode"></span></a>
+				<div class="rightbar-app-multi">
+					<div class="rightbar-app-arrow"></div>
+					<div class="rightbar-app clearfix">
+						<img src="src/app.png" alt="APP二维码">
+						<h3>下载手机应用</h3>
+						<span>即可参加红包分享活动</span>
+					</div>
+				</div><!-- topbar-app-multi end -->
+			</div><!-- right-bar-app end -->
+		<a href="" class="icon-timeclock"><span class="icon-headphones"></span></a>
+		<a href="javascript:void(0);" id="icon-moveup" onclick="moveTop(1)"><span class="icon-move-up"></span></a>
+		<a href="javascript:void(0);" id="icon-movedown" onclick="moveDown(1);"><span class="icon-move-up"></span></a>
+		</div><!-- right-bar-bottom end -->
+		
+	</div><!-- right-bar end -->
+	<div class="main">
+		<div class="main-top-bar commnWidth clearfix">
+			<div class="top-bar-location">
+				<span>当前位置: </span>
+				<span class="top-bar-addr">
+					<a href="" > &nbsp;闵行区上海交通大学(闵行校区)数据库里</a>
+				</span>
+				
+				<a href="" class="top-bar-change">[切换地址]</a>
+			</div><!-- top-bar-location end -->
+			<div class="top-bar-search">
+
+				<input type="text" class="top-bar-searchText " placeholder="搜索商家，美食...">
+				<a href="" class="top-bar-searchBtn"><span class="icon-search"></span></a>
+			</div><!-- top-bar-search end-->
+
+			
+
+		</div><!-- main-top-bar end -->
+		<div class="main-top-ad commnWidth" id="main-top-ad">
+			<div id="top-ad-img">
+				<a href=""><img src="src/ad-1.jpg" alt="广告图片"></a>
+				<a href=""><img src="src/ad-2.jpg" alt="广告图片"></a>
+				<a href=""><img src="src/ad-1.jpg" alt="广告图片"></a>
+				<a href=""><img src="src/ad-2.jpg" alt="广告图片"></a>
+				<a href=""><img src="src/ad-1.jpg" alt="广告图片"></a>
+				<a href=""><img src="src/ad-2.jpg" alt="广告图片"></a>
+			</div>
+		</div><!-- main-top-ad end -->
+
+		<div class="main-top-title commnWidth">
+			<a href="" id="takeaway-shop">外卖商家</a>
+			<a href="">附近团购</a>
+			<img src="src/catch-1.png" alt="谁去拿外卖">
+		</div><!-- main-top-title end -->
+
+		<div class="main-mid-class commnWidth">
+			<span>商家分类</span>
+			<a href="javascript:void(0);" id="mid-all-shop" onclick="showClassMenu(-1);">全部商家</a>
+			<a href="javascript:void(0);" id="mid-band-shop" >品牌商家</a>
+			<a href="javascript:void(0);" onclick="showClassMenu(1);">快餐类</a>
+			<a href="javascript:void(0);" onclick="showClassMenu(2);">正餐类</a>
+			<a href="javascript:void(0);" onclick="showClassMenu(3);">小吃零食</a>
+			<a href="javascript:void(0);" onclick="showClassMenu(4);">甜品饮品</a>
+			<a href="javascript:void(0);" onclick="showClassMenu(5);">果蔬生鲜</a>
+			<a href="javascript:void(0);" onclick="showClassMenu(6);">鲜花蛋糕</a>
+			<a href="javascript:void(0);" onclick="showClassMenu(7);">超市便利店</a>
+			<div class="mid-all-class">
+				<div class="mid-all">
+					<a href="" id="mid-all-class-specific">全部快餐类</a>
+					<a href="">盖浇饭</a>
+					<a href="">品牌快餐</a>
+					<a href="">中式炒菜</a>
+					<a href="">米粉面馆</a>
+					<a href="">汉堡</a>
+					<a href="">麻辣烫</a>
+					<a href="">饺子馄饨</a>
+					<a href="">烧烤</a>
+					<a href="">披萨意面</a>
+					<a href="">香锅</a>
+					<a href="">包子粥店</a>
+					<a href="">生煎锅贴</a>
+
+				</div>
+				<div class="mid-all">
+					<a href="" id="mid-all-class-specific">全部正餐类</a>
+					<a href="">川湘菜</a>
+					<a href="">日韩料理</a>
+					<a href="">西餐</a>
+					<a href="">江浙菜</a>
+					<a href="">清真</a>
+					<a href="">火锅</a>
+					<a href="">东北菜</a>
+					<a href="">西北菜</a>
+					<a href="">海鲜</a>
+					<a href="">粤菜</a>
+					<a href="">云南菜</a>
+					<a href="">鲁菜</a>
+
+				</div>
+
+				<div class="mid-all">
+					<a href="" id="mid-all-class-specific">全部小吃零食</a>
+					<a href="">地方小吃</a>
+					<a href="">炸鸡炸串</a>
+					<a href="">鸭脖卤味</a>
+					<a href="">零食</a>
+					<a href="">小龙虾</a>
+					
+
+				</div>
+
+				<div class="mid-all">
+					<a href="" id="mid-all-class-specific">全部甜品饮品</a>
+					<a href="">饮品</a>
+					<a href="">甜品</a>
+					<a href="">点心</a>
+					<a href="">咖啡</a>
+					
+					
+
+				</div>
+
+				<div class="mid-all">
+					<a href="" id="mid-all-class-specific">全部果蔬生鲜</a>
+					<a href="">水果</a>
+					<a href="">蔬菜</a>
+					<a href="">生鲜</a>
+				</div>
+				
+
+				<div class="mid-all">
+					<a href="" id="mid-all-class-specific">全部鲜花蛋糕</a>
+					<a href="">鲜花</a>
+					<a href="">蛋糕</a>
+					<a href="">面包</a>
+				</div>
+				
+				<div class="mid-all">
+					<a href="" id="mid-all-class-specific">全部超市便利店</a>
+					<a href="">便利店</a>
+					<a href="">超市</a>
+					<a href="">水站</a>
+				</div>
+
+			</div><!-- mid-all-class end -->
+
+			
+		</div><!-- main-mid-class end -->
+
+		<div class="main-mid-sort commnWidth">
+			<ul>
+				<li class="auto-sort sort-btn"><a href="">默认排序</a></li>
+				<li class="sort-btn"><a href="" >销量高</a></li>
+				<li class="sort-btn"><a href="" >评价好</a></li>
+				<li id="other-sort-btn" class="sort-btn"><a href=""  >其他排序
+					<span class="icon-chevron-down"></span>
+					<span class="icon-chevron-up"></span>
+					</a>
+					<ul class="other-sort">
+						<li><a href="" >距离最近</a></li>
+						<li><a href="" >配送速度</a></li>
+						<li><a href="" >起送金额</a></li>
+					</ul>
+					
+					
+					
+				</li>
+				<li id="other-sort-btn"  class="sort-btn">
+					<a href="">起送价格: 不限 
+						<span class="icon-chevron-down"></span>
+						<span class="icon-chevron-up"></span>
+						
+					</a>
+					<ul class="other-sort pay-sort">
+						<li><a href="" class="linked">不限</a></li>
+						<li><a href="" >15元以下</a></li>
+						<li><a href="" >20元以下</a></li>
+						<li><a href="" >30元以下</a></li>
+						<li><a href="" >40元以下</a></li>
+					</ul><!-- other-sort end -->
+
+				</li>
+			</ul>
+				
+				
+			<div class="options-check">
+				<input type="checkbox" name="checkbox1" value="checkbox"> 新开商家 
+				<input type="checkbox" name="checkbox2" value="checkbox"> 免费配送 
+				<input type="checkbox" name="checkbox3" value="checkbox"> 蜂鸟专送
+				<input type="checkbox" name="checkbox4" value="checkbox"> 可开发票
+				<input type="checkbox" name="checkbox5" value="checkbox"> 在线支付
+			</div><!-- options-check end -->
+				
+				
+		</div><!-- main-mid-sort end -->
+
+		<div class="main-fix-sort commnWidth">
+			<ul>
+				<li class="auto-sort sort-btn"><a href="">默认排序</a></li>
+				<li class="sort-btn"><a href="" >销量高</a></li>
+				<li class="sort-btn"><a href="" >评价好</a></li>
+				<li id="other-sort-btn" class="sort-btn"><a href=""  >其他排序
+					<span class="icon-chevron-down"></span>
+					<span class="icon-chevron-up"></span>
+					</a>
+					<ul class="other-sort">
+						<li><a href="" >距离最近</a></li>
+						<li><a href="" >配送速度</a></li>
+						<li><a href="" >起送金额</a></li>
+					</ul>
+					
+					
+					
+				</li>
+				<li id="other-sort-btn"  class="sort-btn">
+					<a href="">起送价格: 不限 
+						<span class="icon-chevron-down"></span>
+						<span class="icon-chevron-up"></span>
+						
+					</a>
+					<ul class="other-sort pay-sort">
+						<li><a href="" class="linked">不限</a></li>
+						<li><a href="" >15元以下</a></li>
+						<li><a href="" >20元以下</a></li>
+						<li><a href="" >30元以下</a></li>
+						<li><a href="" >40元以下</a></li>
+					</ul><!-- other-sort end -->
+
+				</li>
+			</ul>
+				
+				
+			<div class="options-check">
+				<input type="checkbox" name="checkbox1" value="checkbox"> 新开商家 
+				<input type="checkbox" name="checkbox2" value="checkbox"> 免费配送 
+				<input type="checkbox" name="checkbox3" value="checkbox"> 蜂鸟专送
+				<input type="checkbox" name="checkbox4" value="checkbox"> 可开发票
+				<input type="checkbox" name="checkbox5" value="checkbox"> 在线支付
+			</div><!-- options-check end -->
+				
+			<div class="top-bar-search fr">
+
+				<input type="text" class="mid-bar-searchText " placeholder="搜索商家，美食...">
+				<a href="" class="top-bar-searchBtn"><span class="icon-search"></span></a>
+			</div><!-- top-bar-search end-->
+
+		</div><!-- main-mid-sort end -->
+
+		<div class="main-imm-view commnWidth">
+			<div class="imm-view-info">
+				想吃好点的，看看附近 <span>23 家</span> 品牌商家吧，<a href="">立即查看</a>
+			</div><!-- imm-view-info end -->
+			
+
+		</div><!-- main-imm-view end -->
+
+
+		<div class="main-content commnWidth">
+			<div class="main-content-menu clearfix">
+				<div class="menu-content-item">
+					<a href="" class="menu-item clearfix">
+						<div class="item-img">
+							<img src="src/item-1.jpg" alt="商家商标">
+							<span id="item-img-time">31分钟</span>
+						</div><!-- item-img end -->
+						<div class="item-info">
+							<div class="item-info-title">八合店</div>
+							<div class="item-info-star" id="item-info-star">
+								<span id="top-star" class="top-star"></span>
+								<span id="bottom-star" class="bottom-star"></span>
+							</div>
+							<span class="item-info-amounts">月售373单</span>
+							<div class="item-info-sendm">10元起送 / 配送费3元</div>
+							<div class="item-info-icons">
+								<i class="icons-sale icons">折</i>
+								<i class="icons-reduce icons">减</i>
+								<i class="icons-payol icons">付</i>
+								
+							</div>
+						</div><!-- item-info end -->
+					</a><!-- menu-item end -->
+
+					<div class="item-detail">
+						<div class="item-detail-arrow"></div>
+						<div class="item-detail-content">
+							<div class="item-title">
+								八合店
+							</div>
+							<div class="item-icons-detail">
+								<div class="sale-detail icons-detail">
+									<i class="icons-sale icons">折</i>
+									九折优惠<span>（手机客户端专享）</span>
+								</div>
+								
+								<div class="reduce-detail">
+									<i class="icons-reduce icons">减</i>
+									满10减2 惠<span>（手机客户端专享）</span>
+								</div>
+								
+								<div class="payol-detail">
+									<i class="icons-payol icons">付</i>
+									可用支付宝、微信、手机QQ进行在线支付
+								</div>
+								
+
+							</div>
+							<div class="item-sendm-detail clearfix">
+								<ul>
+									<li><span>10</span>元起送</li>
+									<li>配送费<span>3</span>元</li>
+									<li>平均<span>31</span>分钟抵达</li>
+								</ul>
+							</div>
+							<div class="item-shop-article">
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+							</div>
+						</div><!-- item-detail-content end -->
+					</div><!-- item-detail end -->
+
+
+				</div><!-- menu-content-item end -->
+
+				<div class="menu-content-item">
+					<a href="" class="menu-item clearfix">
+						<div class="item-img">
+							<img src="src/item-2.jpg" alt="商家商标">
+							<span id="item-img-time">24分钟</span>
+						</div><!-- item-img end -->
+						<div class="item-info">
+							<div class="item-info-title">北京卤肉卷</div>
+							<div class="item-info-star" id="item-info-star">
+								<span id="top-star" class="top-star"></span>
+								<span id="bottom-star" class="bottom-star"></span>
+							</div>
+							<span class="item-info-amounts">月售13单</span>
+							<div class="item-info-sendm">16元起送 / 免费</div>
+							<div class="item-info-icons">
+								<i class="icons-zhuan icons">专</i>
+								<i class="icons-reduce icons">减</i>
+								<i class="icons-paper icons">票</i>
+								
+							</div>
+						</div><!-- item-info end -->
+					</a><!-- menu-item end -->
+
+					<div class="item-detail">
+						<div class="item-detail-arrow"></div>
+						<div class="item-detail-content">
+							<div class="item-title">
+								八合店
+							</div>
+							<div class="item-icons-detail">
+								<div class="sale-detail icons-detail">
+									<i class="icons-zhuan icons">专</i>
+									该商家支持在线手机支付（专享红包）<span>（手机客户端专享）</span>
+								</div>
+								
+								<div class="reduce-detail">
+									<i class="icons-reduce icons">减</i>
+									满10减2 惠<span>（手机客户端专享）</span>
+								</div>
+								
+								<div class="payol-detail">
+									<i class="icons-paper icons">票</i>
+									该商家支持开发票
+								</div>
+								
+
+							</div>
+							<div class="item-sendm-detail clearfix">
+								<ul>
+									<li><span>10</span>元起送</li>
+									<li>配送费<span>3</span>元</li>
+									<li>平均<span>31</span>分钟抵达</li>
+								</ul>
+							</div>
+							<div class="item-shop-article">
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+							</div>
+						</div><!-- item-detail-content end -->
+					</div><!-- item-detail end -->
+
+
+				</div><!-- menu-content-item end -->
+
+				<div class="menu-content-item">
+					<a href="" class="menu-item clearfix">
+						<div class="item-img">
+							<img src="src/item-1.jpg" alt="商家商标">
+							<span id="item-img-time">31分钟</span>
+						</div><!-- item-img end -->
+						<div class="item-info">
+							<div class="item-info-title">八合店</div>
+							<div class="item-info-star" id="item-info-star">
+								<span id="top-star" class="top-star"></span>
+								<span id="bottom-star" class="bottom-star"></span>
+							</div>
+							<span class="item-info-amounts">月售373单</span>
+							<div class="item-info-sendm">10元起送 / 配送费3元</div>
+							<div class="item-info-icons">
+								<i class="icons-sale icons">折</i>
+								<i class="icons-reduce icons">减</i>
+								<i class="icons-payol icons">付</i>
+								
+							</div>
+						</div><!-- item-info end -->
+					</a><!-- menu-item end -->
+
+					<div class="item-detail">
+						<div class="item-detail-arrow"></div>
+						<div class="item-detail-content">
+							<div class="item-title">
+								八合店
+							</div>
+							<div class="item-icons-detail">
+								<div class="sale-detail icons-detail">
+									<i class="icons-sale icons">折</i>
+									九折优惠<span>（手机客户端专享）</span>
+								</div>
+								
+								<div class="reduce-detail">
+									<i class="icons-reduce icons">减</i>
+									满10减2 惠<span>（手机客户端专享）</span>
+								</div>
+								
+								<div class="payol-detail">
+									<i class="icons-payol icons">付</i>
+									可用支付宝、微信、手机QQ进行在线支付
+								</div>
+								
+
+							</div>
+							<div class="item-sendm-detail clearfix">
+								<ul>
+									<li><span>10</span>元起送</li>
+									<li>配送费<span>3</span>元</li>
+									<li>平均<span>31</span>分钟抵达</li>
+								</ul>
+							</div>
+							<div class="item-shop-article">
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+							</div>
+						</div><!-- item-detail-content end -->
+					</div><!-- item-detail end -->
+
+
+				</div><!-- menu-content-item end -->
+
+
+				<div class="menu-content-item">
+					<a href="" class="menu-item clearfix">
+						<div class="item-img">
+							<img src="src/item-1.jpg
+" alt="商家商标">
+							<span id="item-img-time">31分钟</span>
+						</div><!-- item-img end -->
+						<div class="item-info">
+							<div class="item-info-title">八合店</div>
+							<div class="item-info-star" id="item-info-star">
+								<span id="top-star" class="top-star"></span>
+								<span id="bottom-star" class="bottom-star"></span>
+							</div>
+							<span class="item-info-amounts">月售373单</span>
+							<div class="item-info-sendm">10元起送 / 配送费3元</div>
+							<div class="item-info-icons">
+								<i class="icons-sale icons">折</i>
+								<i class="icons-reduce icons">减</i>
+								<i class="icons-payol icons">付</i>
+								
+							</div>
+						</div><!-- item-info end -->
+					</a><!-- menu-item end -->
+
+					<div class="item-detail">
+						<div class="item-detail-arrow"></div>
+						<div class="item-detail-content">
+							<div class="item-title">
+								八合店
+							</div>
+							<div class="item-icons-detail">
+								<div class="sale-detail icons-detail">
+									<i class="icons-sale icons">折</i>
+									九折优惠<span>（手机客户端专享）</span>
+								</div>
+								
+								<div class="reduce-detail">
+									<i class="icons-reduce icons">减</i>
+									满10减2 惠<span>（手机客户端专享）</span>
+								</div>
+								
+								<div class="payol-detail">
+									<i class="icons-payol icons">付</i>
+									可用支付宝、微信、手机QQ进行在线支付
+								</div>
+								
+
+							</div>
+							<div class="item-sendm-detail clearfix">
+								<ul>
+									<li><span>10</span>元起送</li>
+									<li>配送费<span>3</span>元</li>
+									<li>平均<span>31</span>分钟抵达</li>
+								</ul>
+							</div>
+							<div class="item-shop-article">
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+							</div>
+						</div><!-- item-detail-content end -->
+					</div><!-- item-detail end -->
+
+
+				</div><!-- menu-content-item end -->
+
+				<div class="menu-content-item">
+					<a href="" class="menu-item clearfix">
+						<div class="item-img">
+							<img src="src/item-1.jpg
+" alt="商家商标">
+							<span id="item-img-time">31分钟</span>
+						</div><!-- item-img end -->
+						<div class="item-info">
+							<div class="item-info-title">八合店</div>
+							<div class="item-info-star" id="item-info-star">
+								<span id="top-star" class="top-star"></span>
+								<span id="bottom-star" class="bottom-star"></span>
+							</div>
+							<span class="item-info-amounts">月售373单</span>
+							<div class="item-info-sendm">10元起送 / 配送费3元</div>
+							<div class="item-info-icons">
+								<i class="icons-sale icons">折</i>
+								<i class="icons-reduce icons">减</i>
+								<i class="icons-payol icons">付</i>
+								
+							</div>
+						</div><!-- item-info end -->
+					</a><!-- menu-item end -->
+
+					<div class="item-detail">
+						<div class="item-detail-arrow"></div>
+						<div class="item-detail-content">
+							<div class="item-title">
+								八合店
+							</div>
+							<div class="item-icons-detail">
+								<div class="sale-detail icons-detail">
+									<i class="icons-sale icons">折</i>
+									九折优惠<span>（手机客户端专享）</span>
+								</div>
+								
+								<div class="reduce-detail">
+									<i class="icons-reduce icons">减</i>
+									满10减2 惠<span>（手机客户端专享）</span>
+								</div>
+								
+								<div class="payol-detail">
+									<i class="icons-payol icons">付</i>
+									可用支付宝、微信、手机QQ进行在线支付
+								</div>
+								
+
+							</div>
+							<div class="item-sendm-detail clearfix">
+								<ul>
+									<li><span>10</span>元起送</li>
+									<li>配送费<span>3</span>元</li>
+									<li>平均<span>31</span>分钟抵达</li>
+								</ul>
+							</div>
+							<div class="item-shop-article">
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+							</div>
+						</div><!-- item-detail-content end -->
+					</div><!-- item-detail end -->
+
+
+				</div><!-- menu-content-item end -->
+				
+
+				<div class="menu-content-item">
+					<a href="" class="menu-item clearfix">
+						<div class="item-img">
+							<img src="src/item-1.jpg
+" alt="商家商标">
+							<span id="item-img-time">31分钟</span>
+						</div><!-- item-img end -->
+						<div class="item-info">
+							<div class="item-info-title">八合店</div>
+							<div class="item-info-star" id="item-info-star">
+								<span id="top-star" class="top-star"></span>
+								<span id="bottom-star" class="bottom-star"></span>
+							</div>
+							<span class="item-info-amounts">月售373单</span>
+							<div class="item-info-sendm">10元起送 / 配送费3元</div>
+							<div class="item-info-icons">
+								<i class="icons-sale icons">折</i>
+								<i class="icons-reduce icons">减</i>
+								<i class="icons-payol icons">付</i>
+								
+							</div>
+						</div><!-- item-info end -->
+					</a><!-- menu-item end -->
+
+					<div class="item-detail">
+						<div class="item-detail-arrow"></div>
+						<div class="item-detail-content">
+							<div class="item-title">
+								八合店
+							</div>
+							<div class="item-icons-detail">
+								<div class="sale-detail icons-detail">
+									<i class="icons-sale icons">折</i>
+									九折优惠<span>（手机客户端专享）</span>
+								</div>
+								
+								<div class="reduce-detail">
+									<i class="icons-reduce icons">减</i>
+									满10减2 惠<span>（手机客户端专享）</span>
+								</div>
+								
+								<div class="payol-detail">
+									<i class="icons-payol icons">付</i>
+									可用支付宝、微信、手机QQ进行在线支付
+								</div>
+								
+
+							</div>
+							<div class="item-sendm-detail clearfix">
+								<ul>
+									<li><span>10</span>元起送</li>
+									<li>配送费<span>3</span>元</li>
+									<li>平均<span>31</span>分钟抵达</li>
+								</ul>
+							</div>
+							<div class="item-shop-article">
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+							</div>
+						</div><!-- item-detail-content end -->
+					</div><!-- item-detail end -->
+
+
+				</div><!-- menu-content-item end -->
+
+
+
+				<div class="menu-content-item">
+					<a href="" class="menu-item clearfix">
+						<div class="item-img">
+							<img src="src/item-1.jpg
+" alt="商家商标">
+							<span id="item-img-time">31分钟</span>
+						</div><!-- item-img end -->
+						<div class="item-info">
+							<div class="item-info-title">八合店</div>
+							<div class="item-info-star" id="item-info-star">
+								<span id="top-star" class="top-star"></span>
+								<span id="bottom-star" class="bottom-star"></span>
+							</div>
+							<span class="item-info-amounts">月售373单</span>
+							<div class="item-info-sendm">10元起送 / 配送费3元</div>
+							<div class="item-info-icons">
+								<i class="icons-sale icons">折</i>
+								<i class="icons-reduce icons">减</i>
+								<i class="icons-payol icons">付</i>
+								
+							</div>
+						</div><!-- item-info end -->
+					</a><!-- menu-item end -->
+
+					<div class="item-detail">
+						<div class="item-detail-arrow"></div>
+						<div class="item-detail-content">
+							<div class="item-title">
+								八合店
+							</div>
+							<div class="item-icons-detail">
+								<div class="sale-detail icons-detail">
+									<i class="icons-sale icons">折</i>
+									九折优惠<span>（手机客户端专享）</span>
+								</div>
+								
+								<div class="reduce-detail">
+									<i class="icons-reduce icons">减</i>
+									满10减2 惠<span>（手机客户端专享）</span>
+								</div>
+								
+								<div class="payol-detail">
+									<i class="icons-payol icons">付</i>
+									可用支付宝、微信、手机QQ进行在线支付
+								</div>
+								
+
+							</div>
+							<div class="item-sendm-detail clearfix">
+								<ul>
+									<li><span>10</span>元起送</li>
+									<li>配送费<span>3</span>元</li>
+									<li>平均<span>31</span>分钟抵达</li>
+								</ul>
+							</div>
+							<div class="item-shop-article">
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+							</div>
+						</div><!-- item-detail-content end -->
+					</div><!-- item-detail end -->
+
+
+				</div><!-- menu-content-item end -->
+
+
+
+				<div class="menu-content-item">
+					<a href="" class="menu-item clearfix">
+						<div class="item-img">
+							<img src="src/item-1.jpg
+" alt="商家商标">
+							<span id="item-img-time">31分钟</span>
+						</div><!-- item-img end -->
+						<div class="item-info">
+							<div class="item-info-title">八合店</div>
+							<div class="item-info-star" id="item-info-star">
+								<span id="top-star" class="top-star"></span>
+								<span id="bottom-star" class="bottom-star"></span>
+							</div>
+							<span class="item-info-amounts">月售373单</span>
+							<div class="item-info-sendm">10元起送 / 配送费3元</div>
+							<div class="item-info-icons">
+								<i class="icons-sale icons">折</i>
+								<i class="icons-reduce icons">减</i>
+								<i class="icons-payol icons">付</i>
+								
+							</div>
+						</div><!-- item-info end -->
+					</a><!-- menu-item end -->
+
+					<div class="item-detail">
+						<div class="item-detail-arrow"></div>
+						<div class="item-detail-content">
+							<div class="item-title">
+								八合店
+							</div>
+							<div class="item-icons-detail">
+								<div class="sale-detail icons-detail">
+									<i class="icons-sale icons">折</i>
+									九折优惠<span>（手机客户端专享）</span>
+								</div>
+								
+								<div class="reduce-detail">
+									<i class="icons-reduce icons">减</i>
+									满10减2 惠<span>（手机客户端专享）</span>
+								</div>
+								
+								<div class="payol-detail">
+									<i class="icons-payol icons">付</i>
+									可用支付宝、微信、手机QQ进行在线支付
+								</div>
+								
+
+							</div>
+							<div class="item-sendm-detail clearfix">
+								<ul>
+									<li><span>10</span>元起送</li>
+									<li>配送费<span>3</span>元</li>
+									<li>平均<span>31</span>分钟抵达</li>
+								</ul>
+							</div>
+							<div class="item-shop-article">
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+							</div>
+						</div><!-- item-detail-content end -->
+					</div><!-- item-detail end -->
+
+
+				</div><!-- menu-content-item end -->
+
+
+
+				<div class="menu-content-item">
+					<a href="" class="menu-item clearfix">
+						<div class="item-img">
+							<img src="src/item-1.jpg
+" alt="商家商标">
+							<span id="item-img-time">31分钟</span>
+						</div><!-- item-img end -->
+						<div class="item-info">
+							<div class="item-info-title">八合店</div>
+							<div class="item-info-star" id="item-info-star">
+								<span id="top-star" class="top-star"></span>
+								<span id="bottom-star" class="bottom-star"></span>
+							</div>
+							<span class="item-info-amounts">月售373单</span>
+							<div class="item-info-sendm">10元起送 / 配送费3元</div>
+							<div class="item-info-icons">
+								<i class="icons-sale icons">折</i>
+								<i class="icons-reduce icons">减</i>
+								<i class="icons-payol icons">付</i>
+								
+							</div>
+						</div><!-- item-info end -->
+					</a><!-- menu-item end -->
+
+					<div class="item-detail">
+						<div class="item-detail-arrow"></div>
+						<div class="item-detail-content">
+							<div class="item-title">
+								八合店
+							</div>
+							<div class="item-icons-detail">
+								<div class="sale-detail icons-detail">
+									<i class="icons-sale icons">折</i>
+									九折优惠<span>（手机客户端专享）</span>
+								</div>
+								
+								<div class="reduce-detail">
+									<i class="icons-reduce icons">减</i>
+									满10减2 惠<span>（手机客户端专享）</span>
+								</div>
+								
+								<div class="payol-detail">
+									<i class="icons-payol icons">付</i>
+									可用支付宝、微信、手机QQ进行在线支付
+								</div>
+								
+
+							</div>
+							<div class="item-sendm-detail clearfix">
+								<ul>
+									<li><span>10</span>元起送</li>
+									<li>配送费<span>3</span>元</li>
+									<li>平均<span>31</span>分钟抵达</li>
+								</ul>
+							</div>
+							<div class="item-shop-article">
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+							</div>
+						</div><!-- item-detail-content end -->
+					</div><!-- item-detail end -->
+
+
+				</div><!-- menu-content-item end -->
+
+
+
+				<div class="menu-content-item">
+					<a href="" class="menu-item clearfix">
+						<div class="item-img">
+							<img src="src/item-1.jpg
+" alt="商家商标">
+							<span id="item-img-time">31分钟</span>
+						</div><!-- item-img end -->
+						<div class="item-info">
+							<div class="item-info-title">八合店</div>
+							<div class="item-info-star" id="item-info-star">
+								<span id="top-star" class="top-star"></span>
+								<span id="bottom-star" class="bottom-star"></span>
+							</div>
+							<span class="item-info-amounts">月售373单</span>
+							<div class="item-info-sendm">10元起送 / 配送费3元</div>
+							<div class="item-info-icons">
+								<i class="icons-sale icons">折</i>
+								<i class="icons-reduce icons">减</i>
+								<i class="icons-payol icons">付</i>
+								
+							</div>
+						</div><!-- item-info end -->
+					</a><!-- menu-item end -->
+
+					<div class="item-detail">
+						<div class="item-detail-arrow"></div>
+						<div class="item-detail-content">
+							<div class="item-title">
+								八合店
+							</div>
+							<div class="item-icons-detail">
+								<div class="sale-detail icons-detail">
+									<i class="icons-sale icons">折</i>
+									九折优惠<span>（手机客户端专享）</span>
+								</div>
+								
+								<div class="reduce-detail">
+									<i class="icons-reduce icons">减</i>
+									满10减2 惠<span>（手机客户端专享）</span>
+								</div>
+								
+								<div class="payol-detail">
+									<i class="icons-payol icons">付</i>
+									可用支付宝、微信、手机QQ进行在线支付
+								</div>
+								
+
+							</div>
+							<div class="item-sendm-detail clearfix">
+								<ul>
+									<li><span>10</span>元起送</li>
+									<li>配送费<span>3</span>元</li>
+									<li>平均<span>31</span>分钟抵达</li>
+								</ul>
+							</div>
+							<div class="item-shop-article">
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+							</div>
+						</div><!-- item-detail-content end -->
+					</div><!-- item-detail end -->
+
+
+				</div><!-- menu-content-item end -->
+
+
+
+				<div class="menu-content-item">
+					<a href="" class="menu-item clearfix">
+						<div class="item-img">
+							<img src="src/item-1.jpg
+" alt="商家商标">
+							<span id="item-img-time">31分钟</span>
+						</div><!-- item-img end -->
+						<div class="item-info">
+							<div class="item-info-title">八合店</div>
+							<div class="item-info-star" id="item-info-star">
+								<span id="top-star" class="top-star"></span>
+								<span id="bottom-star" class="bottom-star"></span>
+							</div>
+							<span class="item-info-amounts">月售373单</span>
+							<div class="item-info-sendm">10元起送 / 配送费3元</div>
+							<div class="item-info-icons">
+								<i class="icons-sale icons">折</i>
+								<i class="icons-reduce icons">减</i>
+								<i class="icons-payol icons">付</i>
+								
+							</div>
+						</div><!-- item-info end -->
+					</a><!-- menu-item end -->
+
+					<div class="item-detail">
+						<div class="item-detail-arrow"></div>
+						<div class="item-detail-content">
+							<div class="item-title">
+								八合店
+							</div>
+							<div class="item-icons-detail">
+								<div class="sale-detail icons-detail">
+									<i class="icons-sale icons">折</i>
+									九折优惠<span>（手机客户端专享）</span>
+								</div>
+								
+								<div class="reduce-detail">
+									<i class="icons-reduce icons">减</i>
+									满10减2 惠<span>（手机客户端专享）</span>
+								</div>
+								
+								<div class="payol-detail">
+									<i class="icons-payol icons">付</i>
+									可用支付宝、微信、手机QQ进行在线支付
+								</div>
+								
+
+							</div>
+							<div class="item-sendm-detail clearfix">
+								<ul>
+									<li><span>10</span>元起送</li>
+									<li>配送费<span>3</span>元</li>
+									<li>平均<span>31</span>分钟抵达</li>
+								</ul>
+							</div>
+							<div class="item-shop-article">
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+							</div>
+						</div><!-- item-detail-content end -->
+					</div><!-- item-detail end -->
+
+
+				</div><!-- menu-content-item end -->
+
+				<div class="menu-content-item">
+					<a href="" class="menu-item clearfix">
+						<div class="item-img">
+							<img src="src/item-1.jpg" alt="商家商标">
+							<span id="item-img-time">31分钟</span>
+						</div><!-- item-img end -->
+						<div class="item-info">
+							<div class="item-info-title">八合店</div>
+							<div class="item-info-star" id="item-info-star">
+								<span id="top-star" class="top-star"></span>
+								<span id="bottom-star" class="bottom-star"></span>
+							</div>
+							<span class="item-info-amounts">月售373单</span>
+							<div class="item-info-sendm">10元起送 / 配送费3元</div>
+							<div class="item-info-icons">
+								<i class="icons-sale icons">折</i>
+								<i class="icons-reduce icons">减</i>
+								<i class="icons-payol icons">付</i>
+								
+							</div>
+						</div><!-- item-info end -->
+					</a><!-- menu-item end -->
+
+					<div class="item-detail">
+						<div class="item-detail-arrow"></div>
+						<div class="item-detail-content">
+							<div class="item-title">
+								八合店
+							</div>
+							<div class="item-icons-detail">
+								<div class="sale-detail icons-detail">
+									<i class="icons-sale icons">折</i>
+									九折优惠<span>（手机客户端专享）</span>
+								</div>
+								
+								<div class="reduce-detail">
+									<i class="icons-reduce icons">减</i>
+									满10减2 惠<span>（手机客户端专享）</span>
+								</div>
+								
+								<div class="payol-detail">
+									<i class="icons-payol icons">付</i>
+									可用支付宝、微信、手机QQ进行在线支付
+								</div>
+								
+
+							</div>
+							<div class="item-sendm-detail clearfix">
+								<ul>
+									<li><span>10</span>元起送</li>
+									<li>配送费<span>3</span>元</li>
+									<li>平均<span>31</span>分钟抵达</li>
+								</ul>
+							</div>
+							<div class="item-shop-article">
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+								为了避免高峰期配送问题，请各位上帝提前下单，提高我们的配送效率，谢谢。
+							</div>
+						</div><!-- item-detail-content end -->
+					</div><!-- item-detail end -->
+
+
+				</div><!-- menu-content-item end -->
+			</div><!-- main-content-menu end -->
+		</div><!-- main-content end -->
+		
+	</div><!-- main end -->
+	<footer>
+		<div class="footer-container clearfix commnWidth">
+			<div class="footer-items">
+				<h3>用户帮助</h3>
+				<ul>
+					<li><a href="">服务中心</a></li>
+					<li><a href="">常见问题</a></li>
+					<li><a href="">在线客服</a></li>
+				</ul>
+			</div><!-- footer-items end -->
+			<div class="footer-items">
+				<h3>商务合作</h3>
+				<ul>
+					<li><a href="">我要开店</a></li>
+					<li><a href="">加盟指南</a></li>
+					<li><a href="">市场合作</a></li>
+					<li><a href="">开放平台</a></li>
+
+				</ul>
+			</div><!-- footer-items end -->
+			<div class="footer-items">
+				<h3>关于我们</h3>
+				<ul>
+					<li><a href="">饿了么介绍</a></li>
+					<li><a href="">加入我们</a></li>
+					<li><a href="">联系我们</a></li>
+					<li><a href="">服务协议</a></li>
+
+				</ul>
+			</div><!-- footer-items end -->
+			<div class="footer-contact">
+				<div class="contact-items">24小时客服热线 : 10105757</div>
+				<div class="contact-items">意见反馈 : <a href="">feedback@ele.me</a></div>
+				<div class="contact-items">关注我们 : <span class="icon-wechat" id="icon-wechat"></span><span class="icon-renren"></span><span class="icon-sina-weibo"></span></div>
+				<div class="wechat-items-multi" id="wechat-items-multi">
+					<div class="wechat-items-arrow"></div>
+					<div class="wechat-items">
+						<img src="src/app.png" alt="APP二维码">
+						<span>微信号</span>
+						<span>elemeorder</span>
+						<span>饿了么网上订餐</span>
+					</div>
+				</div>
+				
+			</div><!-- footer-contact end -->
+			<div class="footer-app clearfix">
+				<img src="src/app.png" alt="APP二维码">
+				<h2>下载手机版</h2>
+				<span>扫一扫,手机订餐方便</span>
+			</div><!-- footer-app end -->
+
+			<div class="copyright">
+			<div>
+				增值电信业务许可证 : 沪B2-20150033 | 沪ICP备 09007032 | 上海工商行政管理 Copyright ©2008-2015 ele.me, All Rights Reserved.
+			</div>
+			<img src="src/police.jpg" alt="Police">
+			</div><!-- footer-copyright end -->
+		</div><!-- footer-container end -->
+	</footer><!-- footer end -->
+
+
+</body>
+	<script type="text/javascript" src="adBar-plug/adBar.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</html>

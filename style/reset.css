@@ -1,0 +1,75 @@
+@charset 'UTF-8';
+/*初始化*/
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-size: 12px;
+
+    overflow-x:hidden;
+}
+
+img
+{
+    border: none;
+}
+
+li
+{
+    list-style: none;
+}
+
+input,
+select,
+textarea
+{
+    border: none;
+    outline: none;
+}
+
+textarea
+{
+    resize: none;
+}
+
+a
+{
+    text-decoration: none;
+
+    color: #666;
+}
+body, button, input, select, textarea{
+    font:PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+}
+.linked{
+    color:#0089dc;
+}
+/*清除浮动*/
+.clearfix:after
+{
+    display: block;
+    clear: both;
+
+    content: '';
+}
+
+.clearfix
+{
+    zoom: 1;
+}
+
+.fl
+{
+    float: left;
+}
+
+.fr
+{
+    float: right;
+}
+
+
